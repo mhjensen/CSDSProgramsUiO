@@ -70,7 +70,7 @@ Computing Across the Disciplines: Study Programs in Computational Science and Da
 \section*{Executive Summary}
 
 We propose to establish, with startup Fall semester 2023, a new bachelor/undergraduate program in Computational Science and Data Science at the University of Oslo. 
-The new undergraduate program is meant to be a multidisciplinary program with  a strong methodological base of courses in Mathematics, Statistics, Computational Science and Data Science, totalling 90-100 ECTS. The remaining credits will allow students to specialize in different disciplines, like Bioscience, Chemistry, Geoscience, Informatics, Physics and other physical sciences. The program's multidisciplinary nature entails thus a close collaboration between departments at the Faculty of Mathematics and Natural Science.  
+The new undergraduate program is meant to be a multidisciplinary program with  a strong methodological base of courses in Mathematics, Statistics, Computational Science and Data Science, totalling 90-100 ECTS. \textcolor{red} {Merk: I f\o{}lge v\aa{}r studieadministrasjon skal et Bachelor-program ha 120 ECTS obligatoriske studiepoeng. Men det trenger ikke \aa{} v\ae{}re fellesemner, men en liste av typen: To av f\o{}lgende emner:} The remaining credits will allow students to specialize in different disciplines, like Bioscience, Chemistry, Geoscience, Informatics, Physics and other physical sciences. The program's multidisciplinary nature entails thus a close collaboration between departments at the Faculty of Mathematics and Natural Science.  
 
 We propose also that the two existing Master of Science programs, Computational Science and Data Science, merge into one Master of Science program with the same name as the undergraduate program. The new Master of Science program will include all the study directions from the previous two Master of Science programs. Planned startup for the new program is also Fall 2023. 
 
@@ -144,48 +144,27 @@ Here we can think of the topics and themes covered by the central  Math courses 
     \item \textcolor{red}{MAT1120}, 2nd year
 \end{enumerate}
 
-\paragraph{Programming and system development}
-Here we can think of the topics and themes covered by the existing central programming courses.
-20 ECTS plus 10 elective ECTS (also smaller 5 ECTS modules)
+\paragraph{Programming and computer science}
+Programming is central to any form of computational and data science and is included with 20 obligatory ECTS in the proposed program. The form of programming needed by CS/DS students is less obvious. At least today, many CS/DS practioneers/researchers mostly write small scripts, typically consisting of a straightforward sequence of numeric computations. A central question for the programme is whether and to what degree (all or a portion of) CS/DS students should gain competence on how to relate constructively to the use of data/computational science in larger/more complex software systems and whether they should have competence on how to analyze and improve computational efficiency. 
+
+A question we have left open for now is whether the course variants IN1900/IN1910 should be obligatory for all students, which would ensure an identical programming foundation for all students that later courses could build on, or whether students with stronger interests in the direction of informatics (or integration of CS/DS in larger systems) should be allowed to alternatively choose the course combination IN1000/IN1010. Specifically, a challenge with allowing the IN1000/IN1010 combination would be that such students would gain very limited practical experience with libraries for numerical analysis, which might not work well together with the remaining course combination.
+
+A second question is whether CS/DS students should be expected to have one obligatory/recommended course in an informatics direction, beyond the two programming courses. An introductory course in algorithms could be such a candidate. 
+
+Students have an interest in strengthening their competence in the informatics direction would have a range of courses at IFI that could be elected, including: IN2010, IN2040, IN2080, IN2090, IN2100, IN3020, IN3030, IN3040, IN3110, IN3130 and IN3240.
+
+
 \begin{enumerate}
-    \item \textcolor{red}{IN1900} 1st year
-    \item \textcolor{red}{IN1910}
-    \item IN3200, High-performance Computing, elective
+    \item \textcolor{red}{IN1900} 1st year (alternatively allow IN1000 to be chosen).
+    \item \textcolor{red}{IN1910} (alternatively allow IN1010 to be chosen)
+    \item IN2010, IN2040, IN2080, IN2090, IN2100, IN3020, IN3030, IN3040, IN3110, IN3130 and IN3240, elective
 \end{enumerate}
 
-GKS: Like mathematics, informatics is also a domain-agnostic "methods" field (with a few exceptions, like courses on computers and operating systems per se). However, these methods topics cover a very broad range, and are distributed across a large number of courses. While a student of computational/data science might expect to gain a basic competence in such topics, at least to be well prepared to collaborate with pure computer scientists, it may not make sense to go to the same depth on these topics as IFI students. Thus, we also discussed whether it might be useful to define a single new course that at least gives CS/DS-students a feeling of these topics. The following is a very rough suggestion, which would need to be both pruned and improved, but hopefuly useful as a basis for discussion:
-\paragraph{Course title, maybe: "Systems engineering for data science"}
-\paragraph{Candidate theoretical topics (method):}
-\begin{enumerate}
-\item Software development methodologies: mainly agile!?
-\item Software architecture/design: How do you plan and communicate the design of a data science codebase before and during implementation (with colleagues and customers)
-\item Software maintainability: how to develop code that stand the test of time - allowing the code to be updated to future requirements and extended with new features of for new applications (also include code reuse)
-\item Software testing: how do you ensure confidence that the code works as intended and provides valid results (unit testing, effective debugging)
-\item Databases: brief introduction to different types of database systems of relevance to data science - relational databases, object databases, flat file databases. And brief intro to database normal forms.
-\item Basic parallelization approaches for data science: brief intro to multithreading, multiprocessing and MPI. Also approaches like map-reduce.
-\item Brief intro to data structures and algorithms for data scientists: the algorithmic approach to solving problems, pseudo-code, asymptotic time complexity, ...
-\item Brief intro to user experience design
-\item Brief intro to information security and data privacy
-\item Brief into to semantic technologies
-\item Brief into to domain-specific languages - what it is, why it is useful and how one define one's own embedded or external tailored DSLs.
-\end{enumerate}
-
-\paragraph{Candidate practical topics}
-\begin{enumerate}
-\item Analysis reproducibility and FAIR data
-\item Data science frameworks for scaling analyses, like map-reduce, Hadoop, Spark, Ray, ...
-\item Difference between programming languages
-\item Main libraries for data science - scikitlearn, scipy, pytorch, tensorflow, keras, R, ...
-\item Frameworks for data and code sharing - Jupyter, Github (including git and version control) ..
-\item Brief intro to use of computer and HPC systems - memory and storage models for single machines versus clusters, queueing systems, virtual machines and cloud systems, Docker containers, virtual environments, package managers
-\item Becoming a productive programmer: techniques for efficient programming in high-level languages 
-\item Programming for efficiency: brief into to computational efficiency of different programming languages, efficiency of different programming constructs/techniques, memory- and cache-efficiency..
-\end{enumerate}
 
 \paragraph{Computational Science}
 20 ECTS + 10 ECTS elective (also smaller 5 ECTS modules)
 \begin{enumerate}
-    \item \textcolor{red}{Numerical Methods I} Could be revised version of MAT-INF1100, first year
+    \item \textcolor{red}{Numerical Methods I} Could be revised version of MAT-INF1100, first year \textcolor{red}{MI og FI er i diskusjon om det nye f\o{}rstesemesteremnet i fysikk, som er ment \aa{} erstatte MAT-INF1100. Det kan kanskje v\ae{}re en ide \aa{} se dette i sammenheng.}
     \item \textcolor{red}{Numerical Methods II}, second year, could be MAT3110
     \item Numerical Methods III, elective,  third year, FYS3150, Computational Physics, third year
 \end{enumerate}
@@ -198,6 +177,8 @@ GKS: Like mathematics, informatics is also a domain-agnostic "methods" field (wi
     \item \textcolor{red}{Introduction to probability and statistics}, first year, preferable a revised version of STK1100.
     
     An introductory course (10 ECTS) should introduce probability theory (including conditional probabilities and Bayes theorem, some common distributions, expectations, variances, covariances), statisitcal inference (the likelihood function, parametric modelling, ML estimation, bias in estimation, confidence intervals Bootrapping, some simple models). In order to make the course attractive for several bachelor programs, the course should include good examples/case studies from substance disciplines.
+    
+    \textcolor{red}{Den samme merknaden her som under MAT-INF1100. MI sitt standpunkt er at FYS 113x (eller FYS-STK 113x) er mer eller mindre et rent statistikkemne og b\o{}r undervises av MI. Kan dette sees i sammenheng?}
     \item \textcolor{red}{Statistical learning and machine learning}, 2nd year, preferable STK2100
     
     A second course (10 ECTS) should focus on statistical/machine learning methods, starting with linear models (going a bit in depth on this) and then demonstrating \emph{some} advanced methods (e.g nearest neighbor, neural network). Possibly also examples of unsupervised learning/data mining.
